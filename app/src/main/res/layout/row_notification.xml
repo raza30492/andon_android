@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/issue_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <in.andonsystem.view.LetterImageView
+        android:id="@+id/nfn_letter_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/nfn_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/nfn_letter_image"
+        android:text="Problem xyz "/>
+    <TextView
+        android:id="@+id/nfn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1h 5 min"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/nfn_letter_image"
+        android:layout_below="@+id/nfn_message"/>
+
+    <TextView
+        android:id="@+id/issue_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
+

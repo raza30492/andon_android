@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.andonsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="in.andonsystem.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="in.andonsystem.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="in.andonsystem.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="in.andonsystem.LoadingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.andonsystem.RaiseIssueActivity"
+            android:label="@string/title_activity_raise_issue"
+            android:parentActivityName="in.andonsystem.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-HIssue
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.andonsystem.IssueDetailActivity"
+            android:label="@string/title_activity_issue_detail"
+            android:parentActivityName="in.andonsystem.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-HIssue
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.andonsystem.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="in.andonsystem.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-HIssue
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.andonsystem.StyleChangeOverActivity"
+            android:label="@string/title_activity_style_change_over"
+            android:parentActivityName="in.andonsystem.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-HIssue
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.andonsystem.ReportActivity"
+            android:label="@string/title_activity_report"
+            android:parentActivityName="in.andonsystem.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-HIssue
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.andonsystem.ContactActivity"
+            android:label="@string/title_activity_contact"
+            android:parentActivityName="in.andonsystem.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-HIssue
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.andonsystem.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:parentActivityName="in.andonsystem.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-HIssue
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.andonsystem.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="in.andonsystem.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-HIssue
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.andonsystem.NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:parentActivityName="in.andonsystem.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-HIssue
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.andonsystem.ForgptPasswordActivity"
+            android:label="@string/title_activity_forgpt_password"
+            android:parentActivityName="in.andonsystem.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.andonsystem.LoginActivity" />
+        </activity>
+    </application>
+
+</manifest>
